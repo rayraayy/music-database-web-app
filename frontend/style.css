@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f3f5f9; color: #1e293b; }
+.navbar { background: #111827; color: white; padding: 18px 32px; display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
+.navbar h1 { margin: 0; }
+.student-name { background: #2563eb; padding: 8px 12px; border-radius: 20px; font-weight: bold; }
+.nav-links { margin-left: auto; display: flex; gap: 12px; }
+.nav-link { color: white; text-decoration: none; padding: 8px 12px; border-radius: 8px; }
+.nav-link:hover, .nav-link.active { background: #374151; }
+main { max-width: 1200px; margin: 30px auto; padding: 0 20px; }
+.page { display: none; }
+.active-page { display: block; }
+.hero { background: white; border-radius: 18px; padding: 34px; box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08); }
+.hero h2 { font-size: 36px; margin-top: 0; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 24px; }
+.cards article, .form-card { background: white; padding: 18px; border-radius: 14px; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08); }
+.form-card { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 22px; }
+input { padding: 11px; border: 1px solid #cbd5e1; border-radius: 8px; }
+button { border: none; background: #2563eb; color: white; padding: 11px 14px; border-radius: 8px; cursor: pointer; font-weight: bold; }
+button:hover { background: #1d4ed8; }
+button.delete { background: #dc2626; }
+button.edit { background: #059669; }
+table { width: 100%; border-collapse: collapse; background: white; border-radius: 14px; overflow: hidden; box-shadow: 0 6px 18px rgba(15, 23, 42, 0.08); }
+th, td { padding: 12px; border-bottom: 1px solid #e2e8f0; text-align: left; }
+th { background: #e5e7eb; }
+.actions { display: flex; gap: 8px; flex-wrap: wrap; }
+footer { text-align: center; padding: 25px; color: #475569; }
+@media (max-width: 720px) { .nav-links { margin-left: 0; width: 100%; } table { font-size: 13px; } }
